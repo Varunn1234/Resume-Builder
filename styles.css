@@ -229,43 +229,9 @@
   .toast.warn{background:var(--amber);}
   .toast.out{opacity:0; transform:translateY(6px);}
 
-
-  /* ---------- Auth Modal ---------- */
-  .auth-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px;}
-  .auth-modal{background:#fff;border-radius:16px;padding:36px 40px;width:100%;max-width:420px;box-shadow:0 20px 60px rgba(0,0,0,0.25);position:relative;}
-  .auth-modal h2{font-size:22px;margin-bottom:6px;}
-  .auth-modal p{color:var(--ink-soft);font-size:14px;margin-bottom:24px;}
-  .auth-field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px;}
-  .auth-field label{font-size:12.5px;font-weight:600;color:var(--ink);}
-  .auth-field input{border:1px solid var(--line);border-radius:7px;padding:11px 13px;font-size:14px;font-family:inherit;background:var(--paper-soft);}
-  .auth-field input:focus{outline:2px solid var(--indigo);outline-offset:1px;}
-  .auth-error{color:var(--danger);font-size:13px;margin-bottom:12px;background:rgba(179,67,43,0.07);padding:8px 12px;border-radius:6px;}
-  .auth-switch{font-size:13px;color:var(--ink-soft);margin-top:16px;text-align:center;}
-  .auth-switch button{background:none;border:none;color:var(--indigo);font-weight:600;cursor:pointer;font-size:13px;font-family:inherit;}
-  .auth-close{position:absolute;top:14px;right:16px;background:none;border:none;font-size:20px;cursor:pointer;color:var(--ink-soft);line-height:1;}
-  .auth-divider{display:flex;align-items:center;gap:10px;margin:16px 0;color:var(--ink-soft);font-size:12px;}
-  .auth-divider::before,.auth-divider::after{content:'';flex:1;height:1px;background:var(--line);}
-
-  /* ---------- Topbar user area ---------- */
-  .topbar-user{display:flex;align-items:center;gap:10px;}
-  .user-avatar{width:32px;height:32px;border-radius:50%;background:var(--indigo);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;}
-  .user-menu{position:relative;}
-  .user-dropdown{position:absolute;right:0;top:42px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,0.12);min-width:220px;z-index:50;overflow:hidden;}
-  .user-dropdown-head{padding:14px 16px;border-bottom:1px solid var(--line);}
-  .user-dropdown-name{font-weight:700;font-size:14px;}
-  .user-dropdown-email{font-size:12px;color:var(--ink-soft);}
-  .user-dropdown-item{display:flex;align-items:center;gap:10px;padding:11px 16px;font-size:13.5px;cursor:pointer;border:none;background:none;width:100%;text-align:left;font-family:inherit;color:var(--ink);}
-  .user-dropdown-item:hover{background:var(--scan-green-bg);}
-  .user-dropdown-item.danger{color:var(--danger);}
-  .user-dropdown-item.danger:hover{background:rgba(179,67,43,0.06);}
-
-  /* ---------- Dashboard ---------- */
+  /* ---------- Dashboard (saved resumes) ---------- */
   .dashboard{max-width:860px;margin:0 auto;padding:52px 24px 80px;}
   .dashboard h1{font-size:30px;margin-bottom:4px;}
-  .dash-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0;}
-  .dash-stat{background:var(--paper-soft);border:1px solid var(--line);border-radius:10px;padding:20px 22px;}
-  .dash-stat-num{font-size:28px;font-weight:700;color:var(--indigo);}
-  .dash-stat-label{font-size:12.5px;color:var(--ink-soft);margin-top:2px;}
   .dash-resumes{margin-top:28px;}
   .dash-resumes h3{font-size:17px;margin-bottom:14px;}
   .dash-resume-row{display:flex;align-items:center;gap:14px;background:var(--paper-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:10px;cursor:pointer;transition:border-color .15s;}
@@ -276,11 +242,6 @@
   .dash-resume-meta{font-size:12px;color:var(--ink-soft);margin-top:2px;}
   .dash-resume-actions{display:flex;gap:8px;}
   .dash-empty{color:var(--ink-soft);font-size:14px;padding:24px;text-align:center;border:2px dashed var(--line);border-radius:10px;}
-  .apikey-section{margin-top:28px;padding:20px 22px;background:var(--paper-soft);border:1px solid var(--line);border-radius:10px;}
-  .apikey-section h3{font-size:15px;margin-bottom:8px;}
-  .apikey-row{display:flex;gap:10px;margin-top:10px;}
-  .apikey-row input{flex:1;border:1px solid var(--line);border-radius:7px;padding:9px 12px;font-size:13px;font-family:monospace;background:#fff;}
-  @media(max-width:600px){.dash-stats{grid-template-columns:1fr 1fr;}}
 
   /* ---------- Template Picker ---------- */
   .tpl-screen{max-width:1100px; margin:0 auto; padding:52px 24px 80px;}
